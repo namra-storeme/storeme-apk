@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">@color/md3_primary</color>
+    <color name="accent_blue_light">@color/md3_primary</color>
+    <color name="accent_green">@color/md3_success</color>
+    <color name="accent_red">@color/md3_error</color>
+    <color name="accent_yellow">@color/md3_warning</color>
+    <color name="bg_dark">@color/md3_bg</color>
+    <color name="bg_light">@color/md3_bg</color>
+    <color name="ent_accent_amber">@color/md3_warning</color>
+    <color name="ent_accent_blue">@color/md3_primary</color>
+    <color name="ent_accent_green">@color/md3_success</color>
+    <color name="ent_accent_red">@color/md3_error</color>
+    <color name="ent_bg">@color/md3_bg</color>
+    <color name="ent_primary">@color/md3_bg</color>
+    <color name="ent_stroke">@color/md3_outline</color>
+    <color name="ent_stroke_hard">@color/md3_outline</color>
+    <color name="ent_surface">@color/md3_surface</color>
+    <color name="ent_text_primary">@color/md3_text_primary</color>
+    <color name="ent_text_secondary">@color/md3_text_secondary</color>
+    <color name="ent_text_tertiary">@color/md3_text_secondary</color>
+    <color name="md3_bg">#121218</color>
+    <color name="md3_error">#F2B8B8</color>
+    <color name="md3_outline">#3A3A4A</color>
+    <color name="md3_primary">#4F8EF7</color>
+    <color name="md3_secondary">#9B8BD8</color>
+    <color name="md3_success">#81C995</color>
+    <color name="md3_surface">#1C1B22</color>
+    <color name="md3_surface_variant">#27253E</color>
+    <color name="md3_text_on_primary">#000000</color>
+    <color name="md3_text_primary">#E6E1E5</color>
+    <color name="md3_text_secondary">#9E9D9F</color>
+    <color name="md3_warning">#FDD663</color>
+    <color name="stroke_dark">@color/md3_outline</color>
+    <color name="stroke_light">@color/md3_outline</color>
+    <color name="surface_dark">@color/md3_surface</color>
+    <color name="surface_light">@color/md3_surface</color>
+    <color name="text_black">@color/md3_text_primary</color>
+    <color name="text_muted_dark">@color/md3_text_secondary</color>
+    <color name="text_muted_light">@color/md3_text_secondary</color>
+    <color name="text_white">@color/md3_text_primary</color>
+    <color name="transparent">#00000000</color>
+    <string name="firebase_database_url" translatable="false">https://storeme-6bf70-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">302335291001</string>
+    <string name="google_api_key" translatable="false">AIzaSyBxrdZXwbsOArbunK7NygpZ9CFRgMQyGcA</string>
+    <string name="google_app_id" translatable="false">1:302335291001:android:049c71a0aa25f33a8deea8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBxrdZXwbsOArbunK7NygpZ9CFRgMQyGcA</string>
+    <string name="google_storage_bucket" translatable="false">storeme-6bf70.firebasestorage.app</string>
+    <string name="project_id" translatable="false">storeme-6bf70</string>
+    <style name="Theme.StoreMeNative" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/md3_bg</item>
+        <item name="android:statusBarColor">@color/md3_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/md3_primary</item>
+        <item name="colorAccent">@color/md3_primary</item>
+        
+        
+        <item name="colorControlHighlight">#33FFFFFF</item>
+    </style>
+    <style name="Theme.StoreMeNative.DarkAuth" parent="Theme.StoreMeNative">
+        
+    </style>
+</resources>

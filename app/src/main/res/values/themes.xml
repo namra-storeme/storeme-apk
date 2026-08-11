@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material You Dark Theme -->
+    <style name="Theme.StoreMeNative" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/md3_bg</item>
+        <item name="android:statusBarColor">@color/md3_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/md3_primary</item>
+        <item name="colorAccent">@color/md3_primary</item>
+        
+        <!-- Ripple color -->
+        <item name="colorControlHighlight">#33FFFFFF</item>
+    </style>
+
+    <!-- Specific Theme for Auth Screens (Using same base for MD3 consistency) -->
+    <style name="Theme.StoreMeNative.DarkAuth" parent="Theme.StoreMeNative">
+        <!-- Kept for backward compatibility if specifically referenced -->
+    </style>
+</resources>

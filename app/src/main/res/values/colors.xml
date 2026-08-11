@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Google Material You (MD3) Dark Theme Palette -->
+    <!-- Core Backgrounds -->
+    <color name="md3_bg">#121218</color>
+    <color name="md3_surface">#1C1B22</color>
+    <color name="md3_surface_variant">#27253E</color>
+    
+    <!-- Borders / Outlines -->
+    <color name="md3_outline">#3A3A4A</color>
+    
+    <!-- Primary Accents -->
+    <color name="md3_primary">#4F8EF7</color>
+    <color name="md3_secondary">#9B8BD8</color>
+    
+    <!-- Functional Accents -->
+    <color name="md3_error">#F2B8B8</color>
+    <color name="md3_success">#81C995</color>
+    <color name="md3_warning">#FDD663</color>
+    
+    <!-- Text -->
+    <color name="md3_text_primary">#E6E1E5</color>
+    <color name="md3_text_secondary">#9E9D9F</color>
+    <color name="md3_text_on_primary">#000000</color>
+
+    <color name="transparent">#00000000</color>
+    
+    <!-- Backward Compatibility Mappings (Will be replaced in layouts) -->
+    <color name="ent_bg">@color/md3_bg</color>
+    <color name="ent_surface">@color/md3_surface</color>
+    <color name="ent_stroke">@color/md3_outline</color>
+    <color name="ent_stroke_hard">@color/md3_outline</color>
+    <color name="ent_primary">@color/md3_bg</color>
+    <color name="ent_accent_blue">@color/md3_primary</color>
+    <color name="ent_accent_green">@color/md3_success</color>
+    <color name="ent_accent_red">@color/md3_error</color>
+    <color name="ent_accent_amber">@color/md3_warning</color>
+    <color name="ent_text_primary">@color/md3_text_primary</color>
+    <color name="ent_text_secondary">@color/md3_text_secondary</color>
+    <color name="ent_text_tertiary">@color/md3_text_secondary</color>
+    
+    <color name="bg_light">@color/md3_bg</color>
+    <color name="surface_light">@color/md3_surface</color>
+    <color name="stroke_light">@color/md3_outline</color>
+    <color name="text_black">@color/md3_text_primary</color>
+    <color name="text_muted_light">@color/md3_text_secondary</color>
+    
+    <color name="accent_blue">@color/md3_primary</color>
+    <color name="accent_blue_light">@color/md3_primary</color>
+    <color name="accent_green">@color/md3_success</color>
+    <color name="accent_yellow">@color/md3_warning</color>
+    <color name="accent_red">@color/md3_error</color>
+    
+    <color name="bg_dark">@color/md3_bg</color>
+    <color name="surface_dark">@color/md3_surface</color>
+    <color name="stroke_dark">@color/md3_outline</color>
+    <color name="text_white">@color/md3_text_primary</color>
+    <color name="text_muted_dark">@color/md3_text_secondary</color>
+</resources>

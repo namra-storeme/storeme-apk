@@ -1,0 +1,274 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.storeme"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:6:5-67
+12-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:7:5-76
+13-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:7:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:8:5-79
+14-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:9:5-77
+15-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:9:22-74
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+16-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:10:5-87
+16-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:10:22-84
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:11:5-68
+17-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:11:22-65
+18    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+18-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:12:5-72
+18-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:12:22-69
+19
+20    <!-- File System Access -->
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:15:5-80
+21-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:15:22-77
+22    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+22-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:16:5-82
+22-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:16:22-79
+23
+24    <!-- suppress DeprecatedClassUsageInspection -->
+25    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+25-->[androidx.biometric:biometric:1.1.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\4200d3ddf9f01d3c00b43665dff7690b\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+25-->[androidx.biometric:biometric:1.1.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\4200d3ddf9f01d3c00b43665dff7690b\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+26
+27    <permission
+27-->[androidx.core:core:1.9.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\a39d967d2d5c67fc32b75d284dff021b\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+28        android:name="com.storeme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.9.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\a39d967d2d5c67fc32b75d284dff021b\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.9.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\a39d967d2d5c67fc32b75d284dff021b\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.storeme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.9.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\a39d967d2d5c67fc32b75d284dff021b\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.9.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\a39d967d2d5c67fc32b75d284dff021b\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+32
+33    <application
+33-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:18:5-59:19
+34        android:allowBackup="true"
+34-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:19:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.9.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\a39d967d2d5c67fc32b75d284dff021b\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:label="StoreMe Native"
+38-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:20:9-39
+39        android:supportsRtl="true"
+39-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:21:9-35
+40        android:theme="@style/Theme.StoreMeNative"
+40-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:23:9-51
+41        android:usesCleartextTraffic="true" >
+41-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:22:9-44
+42        <activity
+42-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:25:9-32:20
+43            android:name="com.storeme.MainActivity"
+43-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:26:13-41
+44            android:exported="true" >
+44-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:27:13-36
+45            <intent-filter>
+45-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:28:13-31:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:29:17-69
+46-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:29:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:30:17-77
+48-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:30:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity android:name="com.storeme.CreateServerActivity" />
+51-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:33:9-58
+51-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:33:19-55
+52        <activity android:name="com.storeme.UseServerActivity" />
+52-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:34:9-55
+52-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:34:19-52
+53        <activity android:name="com.storeme.DashboardActivity" />
+53-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:35:9-55
+53-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:35:19-52
+54        <activity android:name="com.storeme.ClientDashboardActivity" />
+54-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:36:9-61
+54-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:36:19-58
+55        <activity android:name="com.storeme.FileManagerActivity" />
+55-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:37:9-57
+55-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:37:19-54
+56        <activity android:name="com.storeme.ActivityLogActivity" />
+56-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:38:9-57
+56-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:38:19-54
+57        <activity android:name="com.storeme.SettingsActivity" />
+57-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:39:9-54
+57-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:39:19-51
+58        <activity android:name="com.storeme.ManageUsersActivity" />
+58-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:40:9-57
+58-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:40:19-54
+59
+60        <service
+60-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:42:9-46:40
+61            android:name="com.storeme.HostForegroundService"
+61-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:43:13-50
+62            android:exported="false"
+62-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:46:13-37
+63            android:foregroundServiceType="dataSync"
+63-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:44:13-53
+64            android:stopWithTask="false" />
+64-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:45:13-41
+65
+66        <provider
+67            android:name="androidx.core.content.FileProvider"
+67-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:50:13-62
+68            android:authorities="com.storeme.fileprovider"
+68-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:51:13-64
+69            android:exported="false"
+69-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:52:13-37
+70            android:grantUriPermissions="true" >
+70-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:53:13-47
+71            <meta-data
+71-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:54:13-56:54
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:55:17-67
+73                android:resource="@xml/file_paths" />
+73-->F:\finalone\storeme_native\app\src\main\AndroidManifest.xml:56:17-51
+74        </provider>
+75
+76        <service
+76-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:26:9-35:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:27:13-84
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:28:13-37
+80            <meta-data
+80-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:29:13-31:85
+81                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+81-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:30:17-120
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:31:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:32:13-34:85
+84                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+84-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:33:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-database:20.3.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\56237e6d6b91983758e8e16cfdd6651e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:34:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\fb2cec3f5226ff5545703c45320da77c\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+87                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+87-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\fb2cec3f5226ff5545703c45320da77c\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\fb2cec3f5226ff5545703c45320da77c\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+90                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+90-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+92        </service>
+93
+94        <provider
+94-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+95            android:name="com.google.firebase.provider.FirebaseInitProvider"
+95-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+96            android:authorities="com.storeme.firebaseinitprovider"
+96-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+97            android:directBootAware="true"
+97-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+98            android:exported="false"
+98-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+99            android:initOrder="100" />
+99-->[com.google.firebase:firebase-common:20.4.2] C:\Users\NamraP\.gradle\caches\8.14\transforms\ce42ad0a8755bddeeacc14783cac0247\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\5a91d6202793e104afff0538a39a7154\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\5a91d6202793e104afff0538a39a7154\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\5a91d6202793e104afff0538a39a7154\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\5a91d6202793e104afff0538a39a7154\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+105
+106        <provider
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+107            android:name="androidx.startup.InitializationProvider"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+108            android:authorities="com.storeme.androidx-startup"
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+109            android:exported="false" >
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+110            <meta-data
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+112                android:value="androidx.startup" />
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\0c23fa5e8bd3ee8e93bc4aa0e8f577bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+113            <meta-data
+113-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\ead6c4e582db8862bf4239104aab1c61\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+114-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\ead6c4e582db8862bf4239104aab1c61\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+115                android:value="androidx.startup" />
+115-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\NamraP\.gradle\caches\8.14\transforms\ead6c4e582db8862bf4239104aab1c61\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+118                android:value="androidx.startup" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+119        </provider>
+120
+121        <meta-data
+121-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\97ffacdd2d1ffef6fe027e60158c5a7b\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+122            android:name="com.google.android.gms.version"
+122-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\97ffacdd2d1ffef6fe027e60158c5a7b\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+123            android:value="@integer/google_play_services_version" />
+123-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\97ffacdd2d1ffef6fe027e60158c5a7b\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+124
+125        <receiver
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+126            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+127            android:directBootAware="false"
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+128            android:enabled="true"
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+129            android:exported="true"
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+130            android:permission="android.permission.DUMP" >
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+132                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+135                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+136            </intent-filter>
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+138                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+141                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NamraP\.gradle\caches\8.14\transforms\1b5268ad70dd18bf0c1ed938eeaacc9e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+142            </intent-filter>
+143        </receiver>
+144    </application>
+145
+146</manifest>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "302335291001",
+    "firebase_url": "https://storeme-6bf70-default-rtdb.firebaseio.com",
+    "project_id": "storeme-6bf70",
+    "storage_bucket": "storeme-6bf70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302335291001:android:049c71a0aa25f33a8deea8",
+        "android_client_info": {
+          "package_name": "com.storeme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxrdZXwbsOArbunK7NygpZ9CFRgMQyGcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
