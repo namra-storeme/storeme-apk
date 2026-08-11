@@ -317,13 +317,39 @@ public class HostForegroundService extends Service {
                             java.io.File oldFile = new java.io.File(effectivePath);
                             java.io.File newFile = new java.io.File(newPath);
                             
-                            // Make sure we're not moving to an invalid directory
                             if (newFile.getParentFile() != null && !newFile.getParentFile().exists()) {
                                 newFile.getParentFile().mkdirs();
                             }
                             
                             if (oldFile.exists() && oldFile.renameTo(newFile)) {
                                 Log.i("StoreMeNative", "Moved " + oldFile + " to " + newFile);
+                            }
+                        }
+                    } else if ("copy".equals(action) && !effectivePath.isEmpty()) {
+                        String newPath = req.optString("newPath");
+                        if (newPath != null && !newPath.isEmpty()) {
+                            java.io.File oldFile = new java.io.File(effectivePath);
+                            java.io.File newFile = new java.io.File(newPath);
+                            
+                            if (newFile.getParentFile() != null && !newFile.getParentFile().exists()) {
+                                newFile.getParentFile().mkdirs();
+                            }
+                            
+                            if (oldFile.exists()) {
+                                try {
+                                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                                        java.nio.file.Files.copy(oldFile.toPath(), newFile.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+                                    } else {
+                                        java.io.InputStream in = new java.io.FileInputStream(oldFile);
+                                        java.io.OutputStream out = new java.io.FileOutputStream(newFile);
+                                        byte[] buf = new byte[1024];
+                                        int len;
+                                        while ((len = in.read(buf)) > 0) out.write(buf, 0, len);
+                                        in.close();
+                                        out.close();
+                                    }
+                                    Log.i("StoreMeNative", "Copied " + oldFile + " to " + newFile);
+                                } catch (Exception e) {}
                             }
                         }
                     } else if ("delete".equals(action) && !effectivePath.isEmpty()) {
