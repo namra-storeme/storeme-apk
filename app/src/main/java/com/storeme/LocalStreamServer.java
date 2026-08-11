@@ -46,6 +46,11 @@ public class LocalStreamServer extends NanoHTTPD {
         Map<String, String> parms = session.getParms();
         String path = parms.get("path");
         if (path == null) path = currentStreamPath;
+        
+        String sizeStr = parms.get("size");
+        if (sizeStr != null) {
+            try { fileSize = Long.parseLong(sizeStr); } catch (Exception e) {}
+        }
 
         Map<String, String> headers = session.getHeaders();
         long startOffset = 0;

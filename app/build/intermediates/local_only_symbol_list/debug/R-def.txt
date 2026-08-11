@@ -289,6 +289,7 @@ layout dialog_file_menu
 layout item_cleaner_result
 layout item_download
 layout item_file
+layout item_file_grid
 layout layout_bottom_nav
 string firebase_database_url
 string gcm_defaultSenderId

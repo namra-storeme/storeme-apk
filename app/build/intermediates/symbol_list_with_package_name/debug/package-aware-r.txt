@@ -4040,6 +4040,7 @@ layout fingerprint_dialog_layout
 layout item_cleaner_result
 layout item_download
 layout item_file
+layout item_file_grid
 layout layout_bottom_nav
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

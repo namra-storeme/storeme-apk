@@ -210,6 +210,7 @@ public class HostForegroundService extends Service {
                                         fileObj.put("path", f.getAbsolutePath());
                                         fileObj.put("isDir", f.isDirectory());
                                         fileObj.put("size", f.length());
+                                        fileObj.put("lastModified", f.lastModified());
                                         batchArray.put(fileObj);
                                     }
                                     
@@ -239,6 +240,7 @@ public class HostForegroundService extends Service {
                                 fileObj.put("path", dir.getAbsolutePath());
                                 fileObj.put("isDir", false);
                                 fileObj.put("size", dir.length());
+                                fileObj.put("lastModified", dir.lastModified());
                                 batchArray.put(fileObj);
                                 
                                 org.json.JSONObject res = new org.json.JSONObject();
@@ -848,6 +850,7 @@ public class HostForegroundService extends Service {
                     fileObj.put("path", f.getAbsolutePath());
                     fileObj.put("isDir", f.isDirectory());
                     fileObj.put("size", f.length());
+                                        fileObj.put("lastModified", f.lastModified());
                     batchArray.put(fileObj);
                 }
                 

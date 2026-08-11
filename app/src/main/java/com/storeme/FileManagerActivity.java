@@ -143,6 +143,7 @@ public class FileManagerActivity extends AppCompatActivity {
                         toggleSelectionMode(true);
                     } else if (item.getItemId() == 2) {
                         gridMode = !gridMode;
+                        adapter.setGridMode(gridMode);
                         recycler.setLayoutManager(gridMode
                                 ? new GridLayoutManager(this, 3)
                                 : new LinearLayoutManager(this));
@@ -344,6 +345,10 @@ public class FileManagerActivity extends AppCompatActivity {
         } else {
             imgSelectAll.setImageResource(R.drawable.ic_uncheck_circle_outline);
         }
+        View btnMore = findViewById(R.id.btnSelectionMore);
+        if (btnMore != null) {
+            btnMore.setVisibility(selectedFiles.size() == 1 ? View.VISIBLE : View.GONE);
+        }
     }
 
     private void loadDirectory(String path) {
@@ -494,18 +499,33 @@ public class FileManagerActivity extends AppCompatActivity {
         }
     }
 
+    private String getMimeType(String path) {
+        String mime = "application/octet-stream";
+        if (path != null) {
+            String lower = path.toLowerCase();
+            if (lower.endsWith(".mp4")) mime = "video/mp4";
+            else if (lower.endsWith(".mkv")) mime = "video/x-matroska";
+            else if (lower.endsWith(".avi")) mime = "video/x-msvideo";
+            else if (lower.endsWith(".jpg") || lower.endsWith(".jpeg")) mime = "image/jpeg";
+            else if (lower.endsWith(".png")) mime = "image/png";
+            else if (lower.endsWith(".gif")) mime = "image/gif";
+            else if (lower.endsWith(".mp3")) mime = "audio/mpeg";
+            else if (lower.endsWith(".pdf")) mime = "application/pdf";
+            else if (lower.endsWith(".txt")) mime = "text/plain";
+            else if (lower.endsWith(".zip")) mime = "application/zip";
+        }
+        return mime;
+    }
+
     private void openFile(JSONObject file) {
         try {
-            String url = "http://127.0.0.1:8080/stream?path=" + android.net.Uri.encode(file.optString("path"));
+            long size = file.optLong("size", 0);
+            String url = "http://127.0.0.1:8080/stream?path=" + android.net.Uri.encode(file.optString("path")) + "&size=" + size;
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(android.net.Uri.parse(url)); // No MIME type to skip chooser
+            intent.setDataAndType(android.net.Uri.parse(url), getMimeType(file.optString("path")));
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            intent.setPackage("com.android.chrome");
-            
-            try {
-                startActivity(intent);
-            } catch (Exception ex) {
-                intent.setPackage(null);
+            try { startActivity(intent); } catch (Exception e) {
+                intent.setData(android.net.Uri.parse(url)); // fallback
                 startActivity(intent);
             }
         } catch (Exception ex) {
@@ -540,6 +560,8 @@ public class FileManagerActivity extends AppCompatActivity {
 
     // Unused FileAdapter class included internally
     static class FileAdapter extends RecyclerView.Adapter<FileAdapter.ViewHolder> {
+        private boolean isGridMode = false;
+        public void setGridMode(boolean grid) { this.isGridMode = grid; notifyDataSetChanged(); }
         private java.util.List<JSONObject> files = new java.util.ArrayList<>();
         private Set<String> selectedPaths = new HashSet<>();
         private boolean isSelectionMode = false;
@@ -577,7 +599,7 @@ public class FileManagerActivity extends AppCompatActivity {
         @Override
         public ViewHolder onCreateViewHolder(android.view.ViewGroup parent, int viewType) {
             View view = android.view.LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.item_file, parent, false);
+                    .inflate(isGridMode ? R.layout.item_file_grid : R.layout.item_file, parent, false);
             return new ViewHolder(view);
         }
         
@@ -613,7 +635,16 @@ public class FileManagerActivity extends AppCompatActivity {
                 holder.imgOverlay.setVisibility(View.GONE);
             }
             
-            holder.textFileDate.setText("Unknown Date"); // Fake date for now, would need backend support for real lastModified
+            
+            long dateMs = file.optLong("lastModified", 0);
+            if (dateMs > 0 && holder.textFileDate != null) {
+                java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd MMM yy, h:mm a", java.util.Locale.getDefault());
+                holder.textFileDate.setText(sdf.format(new java.util.Date(dateMs)));
+                holder.textFileDate.setVisibility(View.VISIBLE);
+            } else if (holder.textFileDate != null) {
+                holder.textFileDate.setVisibility(View.GONE);
+            }
+
             
             // Selection UI
             if (isSelectionMode || selectedPaths.contains(path)) {

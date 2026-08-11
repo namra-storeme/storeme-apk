@@ -16,7 +16,7 @@
         <RelativeLayout
             android:id="@+id/topBarNormal"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="56dp"
             android:paddingHorizontal="16dp">
             
             <!-- Path Bar (Rounded Pill) -->
@@ -86,7 +86,7 @@
         <RelativeLayout
             android:id="@+id/topBarSelection"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="56dp"
             android:paddingHorizontal="16dp"
             android:visibility="gone">
             
@@ -236,7 +236,7 @@
         android:visibility="gone">
         <ImageView
             android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_height="56dp"
             android:src="@drawable/ic_folder"
             android:tint="@color/md3_outline"
             android:layout_marginBottom="16dp"/>
@@ -253,7 +253,7 @@
         android:id="@+id/layoutFabs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/bottomNavInclude"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
@@ -274,8 +274,8 @@
     <LinearLayout
         android:id="@+id/layoutSelectionBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_above="@id/bottomNavInclude"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/bg_md3_surface_variant"
@@ -320,7 +320,7 @@
         android:padding="16dp"
         android:visibility="gone"
         android:gravity="center_vertical"
-        android:layout_above="@id/bottomNavInclude"
+        android:layout_alignParentBottom="true"
         android:elevation="8dp">
         
         <TextView
