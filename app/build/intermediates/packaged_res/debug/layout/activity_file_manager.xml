@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
 
     <!-- Main Content Layout -->
     <LinearLayout
@@ -14,191 +13,191 @@
         
         <!-- Top App Bar (Normal Mode) -->
         <RelativeLayout
-            android:id="@+id/topBarNormal"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:paddingHorizontal="16dp">
+        android:id="@+id/topBarNormal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="12dp">
             
             <!-- Path Bar (Rounded Pill) -->
             <LinearLayout
-                android:id="@+id/pathBar"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_centerVertical="true"
-                android:layout_toStartOf="@id/btnSearch"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/bg_md3_surface_variant"
-                android:gravity="center_vertical"
-                android:paddingHorizontal="12dp"
-                android:orientation="horizontal">
+        android:id="@+id/pathBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/btnSearch"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_md3_surface_variant"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:orientation="horizontal">
                 
                 <ImageView
-                    android:id="@+id/btnBack"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_home"
-                    app:tint="@color/md3_text_secondary"/>
+        android:id="@+id/btnBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_home"
+        app:tint="@color/md3_text_secondary"/>
                     
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="  >  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">  "
                     android:textColor="@color/md3_text_secondary"
-                    android:textSize="12sp"/>
+                    android:textSize="11sp"/>
                     
                 <TextView
-                    android:id="@+id/textBreadcrumb"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Internal storage"
-                    android:textColor="@color/md3_primary"
-                    android:textSize="14sp"
-                    android:fontFamily="sans-serif-medium"
-                    android:singleLine="true"
-                    android:ellipsize="start"/>
+        android:id="@+id/textBreadcrumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal storage"
+        android:textColor="@color/md3_primary"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:ellipsize="start"/>
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/btnSearch"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_toStartOf="@id/btnMoreOptions"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_search"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="4dp"
-                app:tint="@color/md3_text_primary"/>
+        android:id="@+id/btnSearch"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toStartOf="@id/btnMoreOptions"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_search"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        app:tint="@color/md3_text_primary"/>
                 
             <ImageView
-                android:id="@+id/btnMoreOptions"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_more_vert"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="4dp"
-                app:tint="@color/md3_text_primary"/>
+        android:id="@+id/btnMoreOptions"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_more_vert"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        app:tint="@color/md3_text_primary"/>
         </RelativeLayout>
 
         <!-- Top App Bar (Selection Mode) -->
         <RelativeLayout
-            android:id="@+id/topBarSelection"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:paddingHorizontal="16dp"
-            android:visibility="gone">
+        android:id="@+id/topBarSelection"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="12dp"
+        android:visibility="gone">
             
             <LinearLayout
-                android:id="@+id/btnSelectAll"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_alignParentStart="true"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:paddingHorizontal="8dp">
+        android:id="@+id/btnSelectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingHorizontal="8dp">
                 <ImageView
-                    android:id="@+id/imgSelectAll"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_uncheck_circle_outline"/>
+        android:id="@+id/imgSelectAll"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_uncheck_circle_outline"/>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="All"
-                    android:textSize="10sp"
-                    android:textColor="@color/md3_text_secondary"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All"
+        android:textSize="10sp"
+        android:textColor="@color/md3_text_secondary"/>
             </LinearLayout>
             
             <TextView
-                android:id="@+id/textSelectedCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="1 selected"
-                android:textColor="@color/md3_text_primary"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif-medium"/>
+        android:id="@+id/textSelectedCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="1 selected"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"/>
                 
             <TextView
-                android:id="@+id/btnCancelSelection"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:text="Cancel"
-                android:textColor="@color/md3_text_primary"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif-medium"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="8dp"/>
+        android:id="@+id/btnCancelSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Cancel"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"/>
         </RelativeLayout>
 
         <!-- Search Bar (Hidden by default) -->
         <EditText
-            android:id="@+id/editSearch"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginHorizontal="16dp"
-            android:background="@drawable/bg_md3_surface"
-            android:hint="Search files..."
-            android:textColorHint="@color/md3_text_secondary"
-            android:textColor="@color/md3_text_primary"
-            android:paddingHorizontal="16dp"
-            android:visibility="gone"/>
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_md3_surface"
+        android:hint="Search files..."
+        android:textColorHint="@color/md3_text_secondary"
+        android:textColor="@color/md3_text_primary"
+        android:paddingHorizontal="12dp"
+        android:visibility="gone"/>
 
         <!-- Filter / Sort Bar -->
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:paddingHorizontal="24dp">
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingHorizontal="12dp">
             
             <TextView
-                android:id="@+id/btnFilterAll"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="All ▼"
-                android:gravity="center_vertical"
-                android:textColor="@color/md3_text_secondary"
-                android:textSize="14sp"/>
+        android:id="@+id/btnFilterAll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="All ▼"
+        android:gravity="center_vertical"
+        android:textColor="@color/md3_text_secondary"
+        android:textSize="11sp"/>
                 
             <LinearLayout
-                android:id="@+id/btnSort"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:src="@drawable/ic_sort"
-                    android:layout_marginEnd="4dp"/>
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_sort"
+        android:layout_marginEnd="4dp"/>
                 <TextView
-                    android:id="@+id/textSortMode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Type   |  ↑"
-                    android:textColor="@color/md3_text_secondary"
-                    android:textSize="14sp"/>
+        android:id="@+id/textSortMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type | ↑"
+        android:textColor="@color/md3_text_secondary"
+        android:textSize="11sp"/>
             </LinearLayout>
             
             <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#1AFFFFFF"
-                android:layout_alignParentBottom="true"/>
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1AFFFFFF"
+        android:layout_alignParentBottom="true"/>
         </RelativeLayout>
 
         <!-- Recycler View -->
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerFiles"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipToPadding="false"
-            android:paddingBottom="100dp"/>
+        android:id="@+id/recyclerFiles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"/>
 
     </LinearLayout>
     
@@ -212,18 +211,18 @@
         android:gravity="center"
         android:visibility="gone">
         <ProgressBar
-            android:id="@+id/progressLoading"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:indeterminateTint="@color/md3_primary"/>
+        android:id="@+id/progressLoading"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminateTint="@color/md3_primary"/>
         <TextView
-            android:id="@+id/textLoading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Loading files..."
-            android:textColor="@color/md3_text_secondary"
-            android:textSize="14sp"
-            android:layout_marginTop="16dp"/>
+        android:id="@+id/textLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading files..."
+        android:textColor="@color/md3_text_secondary"
+        android:textSize="11sp"
+        android:layout_marginTop="12dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -235,17 +234,17 @@
         android:gravity="center"
         android:visibility="gone">
         <ImageView
-            android:layout_width="64dp"
-            android:layout_height="56dp"
-            android:src="@drawable/ic_folder"
-            android:tint="@color/md3_outline"
-            android:layout_marginBottom="16dp"/>
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_folder"
+        android:tint="@color/md3_outline"
+        android:layout_marginBottom="12dp"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Folder is empty"
-            android:textColor="@color/md3_text_secondary"
-            android:textSize="16sp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folder is empty"
+        android:textColor="@color/md3_text_secondary"
+        android:textSize="11sp"/>
     </LinearLayout>
 
     <!-- Normal FABs (Hidden in Selection Mode) -->
@@ -256,18 +255,18 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:orientation="vertical"
         android:gravity="center_horizontal">
         
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btnUpload"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_upload_round"
-            app:tint="@color/md3_text_on_primary"
-            app:backgroundTint="@color/md3_primary"
-            app:elevation="6dp"/>
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_upload_round"
+        app:tint="@color/md3_text_on_primary"
+        app:backgroundTint="@color/md3_primary"
+        app:elevation="6dp"/>
     </LinearLayout>
 
     <!-- Floating Selection Bottom Menu -->
@@ -277,36 +276,116 @@
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/bg_md3_surface_variant"
         android:orientation="horizontal"
         android:gravity="center"
         android:visibility="gone"
-        android:elevation="8dp">
+        android:elevation="0dp">
         
-        <LinearLayout android:id="@+id/btnSelectionMove" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?attr/selectableItemBackgroundBorderless">
-            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_move_to" app:tint="@color/md3_text_primary"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Move" android:textColor="@color/md3_text_primary" android:textSize="10sp"/>
+        <LinearLayout
+        android:id="@+id/btnSelectionMove"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_move_to"
+        app:tint="@color/md3_text_primary"/>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="10sp"/>
         </LinearLayout>
         
-        <LinearLayout android:id="@+id/btnSelectionCopy" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?attr/selectableItemBackgroundBorderless">
-            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_copy" app:tint="@color/md3_text_primary"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:textColor="@color/md3_text_primary" android:textSize="10sp"/>
+        <LinearLayout
+        android:id="@+id/btnSelectionCopy"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_copy"
+        app:tint="@color/md3_text_primary"/>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="10sp"/>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnSelectionShare" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?attr/selectableItemBackgroundBorderless">
-            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_share" app:tint="@color/md3_text_primary"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share" android:textColor="@color/md3_text_primary" android:textSize="10sp"/>
+        <LinearLayout
+        android:id="@+id/btnSelectionShare"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_share"
+        app:tint="@color/md3_text_primary"/>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="10sp"/>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnSelectionDelete" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?attr/selectableItemBackgroundBorderless">
-            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_delete" app:tint="@color/md3_text_primary"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" android:textColor="@color/md3_text_primary" android:textSize="10sp"/>
+        <LinearLayout
+        android:id="@+id/btnSelectionDelete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/md3_text_primary"/>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="10sp"/>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/btnSelectionMore" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?attr/selectableItemBackgroundBorderless">
-            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_more_vert" app:tint="@color/md3_text_primary"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More" android:textColor="@color/md3_text_primary" android:textSize="10sp"/>
+        <LinearLayout
+        android:id="@+id/btnSelectionMore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_more_vert"
+        app:tint="@color/md3_text_primary"/>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="10sp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -317,44 +396,48 @@
         android:layout_height="wrap_content"
         android:background="@color/md3_surface_variant"
         android:orientation="horizontal"
-        android:padding="16dp"
+        android:padding="12dp"
         android:visibility="gone"
         android:gravity="center_vertical"
         android:layout_alignParentBottom="true"
-        android:elevation="8dp">
+        android:elevation="0dp">
         
         <TextView
-            android:id="@+id/textMoveFileName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Moving files..."
-            android:textColor="@color/md3_text_primary"
-            android:textSize="14sp"
-            android:maxLines="1"
-            android:ellipsize="end"/>
+        android:id="@+id/textMoveFileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Moving files..."
+        android:textColor="@color/md3_text_primary"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
             
         <Button
-            android:id="@+id/btnCancelMove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            style="?android:attr/borderlessButtonStyle"
-            android:textColor="@color/md3_error"
-            android:layout_marginEnd="8dp"/>
+        android:background="@drawable/bg_md3_button"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:id="@+id/btnCancelMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" style="?android:attr/borderlessButtonStyle"
+        android:layout_marginEnd="8dp"/>
             
         <Button
-            android:id="@+id/btnMoveHere"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Move Here"
-            android:textColor="@color/md3_text_on_primary"
-            android:backgroundTint="@color/md3_primary"/>
+        android:background="@drawable/bg_md3_button"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:id="@+id/btnMoveHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move Here"
+        android:backgroundTint="@color/md3_primary"/>
     </LinearLayout>
 
     <include
-        android:id="@+id/bottomNavInclude"
-        layout="@layout/layout_bottom_nav"
+        android:id="@+id/bottomNavInclude" layout="@layout/layout_bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"/>

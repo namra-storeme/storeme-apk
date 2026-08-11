@@ -1,45 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="8dp"
-    android:background="?attr/selectableItemBackground"
-    android:clickable="true"
-    android:focusable="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
 
     <RelativeLayout
         android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="8dp">
 
         <ImageView
-            android:id="@+id/imgFileIcon"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_folder"
-            app:tint="#FFC107" />
+        android:id="@+id/imgFileIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_folder"
+        app:tint="#FFC107"/>
 
         <ImageView
-            android:id="@+id/imgOverlay"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_image"
-            android:tint="#FFFFFF"
-            android:visibility="gone"/>
+        android:id="@+id/imgOverlay"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_image"
+        android:tint="#FFFFFF"
+        android:visibility="gone"/>
 
         <ImageView
-            android:id="@+id/imgSelect"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_uncheck_circle_outline"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/bg_md3_surface"
-            android:visibility="gone"/>
+        android:id="@+id/imgSelect"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_uncheck_circle_outline"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_md3_surface"
+        android:visibility="gone"/>
     </RelativeLayout>
 
     <TextView
@@ -48,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Folder Name"
         android:textColor="@color/md3_text_primary"
-        android:textSize="12sp"
+        android:textSize="11sp"
         android:maxLines="2"
         android:gravity="center"
         android:ellipsize="end"/>
@@ -68,5 +67,5 @@
         android:id="@+id/textFileDate"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone" /> <!-- Hidden in grid mode -->
+        android:visibility="gone"/> <!-- Hidden in grid mode -->
 </LinearLayout>

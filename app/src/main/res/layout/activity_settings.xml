@@ -1,156 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/md3_bg">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/md3_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="56dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingHorizontal="16dp"
+        android:paddingHorizontal="12dp"
         android:background="@color/md3_surface"
-        android:elevation="4dp">
+        android:elevation="0dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Settings"
-            android:textColor="@color/md3_text_primary"
-            android:textSize="20sp"
-            android:fontFamily="sans-serif-medium"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"/>
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp">
+        android:padding="12dp">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
             
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="gone">
-                <TextView android:id="@+id/textHostPhone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-                <TextView android:id="@+id/textHostBattery" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-                <android.widget.Switch android:id="@+id/switchBiometric" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+                <TextView
+        android:id="@+id/textHostPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+                <TextView
+        android:id="@+id/textHostBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+                <android.widget.Switch
+        android:id="@+id/switchBiometric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
             </LinearLayout>
             <!-- Profile / Account -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Account"
-                android:textColor="@color/md3_primary"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="8dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="@color/md3_primary"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"/>
                 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_md3_surface"
-                android:orientation="vertical"
-                android:paddingVertical="8dp"
-                android:layout_marginBottom="24dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_md3_surface"
+        android:orientation="vertical"
+        android:paddingVertical="8dp"
+        android:layout_marginBottom="12dp">
                 
                 <LinearLayout
-                    android:id="@+id/btnPrefs"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="16dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true">
+        android:id="@+id/btnPrefs"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
                     <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_user_outline"
-                        android:tint="@color/md3_text_secondary"
-                        android:layout_marginEnd="16dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_user_outline"
+        android:tint="@color/md3_text_secondary"
+        android:layout_marginEnd="16dp"/>
                     <TextView
-                        android:id="@+id/textRole"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Role: Unknown"
-                        android:textColor="@color/md3_text_primary"
-                        android:textSize="16sp"/>
+        android:id="@+id/textRole"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Role: Unknown"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="11sp"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/btnStopServer"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="16dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true">
+        android:id="@+id/btnStopServer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
                     <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_power"
-                        android:tint="@color/md3_error"
-                        android:layout_marginEnd="16dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_power"
+        android:tint="@color/md3_error"
+        android:layout_marginEnd="16dp"/>
                     <TextView
-                        android:id="@+id/textLogout"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Disconnect / Stop"
-                        android:textColor="@color/md3_error"
-                        android:textSize="16sp"/>
+        android:id="@+id/textLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Disconnect / Stop"
+        android:textColor="@color/md3_error"
+        android:textSize="11sp"/>
                 </LinearLayout>
             </LinearLayout>
 
             <!-- App info -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="About"
-                android:textColor="@color/md3_primary"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="8dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textColor="@color/md3_primary"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"/>
                 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_md3_surface"
-                android:orientation="vertical"
-                android:paddingVertical="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_md3_surface"
+        android:orientation="vertical"
+        android:paddingVertical="8dp">
                 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="16dp">
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp">
                     <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_info"
-                        android:tint="@color/md3_text_secondary"
-                        android:layout_marginEnd="16dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_info"
+        android:tint="@color/md3_text_secondary"
+        android:layout_marginEnd="16dp"/>
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="StoreMe WebRTC Engine v1.0"
-                        android:textColor="@color/md3_text_primary"
-                        android:textSize="16sp"/>
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="StoreMe WebRTC Engine v1.0"
+        android:textColor="@color/md3_text_primary"
+        android:textSize="11sp"/>
                 </LinearLayout>
             </LinearLayout>
             
@@ -158,6 +167,5 @@
     </ScrollView>
 
     <include
-        android:id="@+id/bottomNavInclude"
-        layout="@layout/layout_bottom_nav"/>
+        android:id="@+id/bottomNavInclude" layout="@layout/layout_bottom_nav"/>
 </LinearLayout>

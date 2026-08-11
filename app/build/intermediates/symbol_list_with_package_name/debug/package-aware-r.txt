@@ -3060,6 +3060,7 @@ drawable bg_input_dark
 drawable bg_input_premium
 drawable bg_landing_premium
 drawable bg_md3_bottom_sheet
+drawable bg_md3_button
 drawable bg_md3_button_primary
 drawable bg_md3_button_secondary
 drawable bg_md3_chip

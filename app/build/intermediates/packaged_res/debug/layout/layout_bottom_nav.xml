@@ -1,131 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="72dp"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginBottom="16dp"
-    android:elevation="8dp">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="0dp">
 
     <!-- Floating Pill Background -->
     <View
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="56dp"
         android:background="@drawable/bg_md3_nav_bar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="56dp"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp"
         android:paddingVertical="8dp">
 
         <LinearLayout
-            android:id="@+id/navHome"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true">
-            <View android:layout_width="48dp" android:layout_height="32dp" android:background="@drawable/bg_md3_nav_active" android:visibility="invisible" android:id="@+id/navHomeIndicator"/>
+        android:id="@+id/navHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true">
+            <View
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_md3_nav_active"
+        android:visibility="invisible"
+        android:id="@+id/navHomeIndicator"/>
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home"
-                app:tint="@color/md3_text_secondary"
-                android:layout_marginTop="-28dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_home"
+        app:tint="@color/md3_text_secondary"
+        android:layout_marginTop="-28dp"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textSize="12sp"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/md3_text_secondary"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/md3_text_secondary"/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/navFiles"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true">
-            <View android:layout_width="48dp" android:layout_height="32dp" android:background="@drawable/bg_md3_nav_active" android:visibility="invisible" android:id="@+id/navFilesIndicator"/>
+        android:id="@+id/navFiles"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true">
+            <View
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_md3_nav_active"
+        android:visibility="invisible"
+        android:id="@+id/navFilesIndicator"/>
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_folder"
-                app:tint="@color/md3_text_secondary"
-                android:layout_marginTop="-28dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_folder"
+        app:tint="@color/md3_text_secondary"
+        android:layout_marginTop="-28dp"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Files"
-                android:textSize="12sp"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/md3_text_secondary"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Files"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/md3_text_secondary"/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/navActivity"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true">
-            <View android:layout_width="48dp" android:layout_height="32dp" android:background="@drawable/bg_md3_nav_active" android:visibility="invisible" android:id="@+id/navActivityIndicator"/>
+        android:id="@+id/navActivity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true">
+            <View
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_md3_nav_active"
+        android:visibility="invisible"
+        android:id="@+id/navActivityIndicator"/>
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_clock"
-                app:tint="@color/md3_text_secondary"
-                android:layout_marginTop="-28dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_clock"
+        app:tint="@color/md3_text_secondary"
+        android:layout_marginTop="-28dp"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activity"
-                android:textSize="12sp"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/md3_text_secondary"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/md3_text_secondary"/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/navSettings"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true">
-            <View android:layout_width="48dp" android:layout_height="32dp" android:background="@drawable/bg_md3_nav_active" android:visibility="invisible" android:id="@+id/navSettingsIndicator"/>
+        android:id="@+id/navSettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true">
+            <View
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_md3_nav_active"
+        android:visibility="invisible"
+        android:id="@+id/navSettingsIndicator"/>
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_settings"
-                app:tint="@color/md3_text_secondary"
-                android:layout_marginTop="-28dp"/>
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_settings"
+        app:tint="@color/md3_text_secondary"
+        android:layout_marginTop="-28dp"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Settings"
-                android:textSize="12sp"
-                android:fontFamily="sans-serif-medium"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/md3_text_secondary"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/md3_text_secondary"/>
         </LinearLayout>
 
     </LinearLayout>
