@@ -142,7 +142,17 @@ public class ActivityLogActivity extends AppCompatActivity {
 
     private void wireNav(String hostId) {
         View navHome = findViewById(R.id.navHome);
-        if (navHome != null) navHome.setOnClickListener(v -> go(ClientDashboardActivity.class, hostId));
+        if (navHome != null) {
+            navHome.setOnClickListener(v -> {
+                android.content.SharedPreferences prefs = getSharedPreferences("StoreMePrefs", MODE_PRIVATE);
+                String role = prefs.getString("active_role", "host");
+                if ("client".equals(role)) {
+                    go(ClientDashboardActivity.class, hostId);
+                } else {
+                    go(DashboardActivity.class, hostId);
+                }
+            });
+        }
 
         View navFiles = findViewById(R.id.navFiles);
         if (navFiles != null) navFiles.setOnClickListener(v -> go(FileManagerActivity.class, hostId));

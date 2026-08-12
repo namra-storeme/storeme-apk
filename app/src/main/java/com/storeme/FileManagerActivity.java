@@ -545,7 +545,13 @@ public class FileManagerActivity extends AppCompatActivity {
         //
 
         if (btnHome != null) btnHome.setOnClickListener(v -> {
-            startActivity(new Intent(this, DashboardActivity.class).putExtra("HOST_ID", hostId));
+            android.content.SharedPreferences prefs = getSharedPreferences("StoreMePrefs", MODE_PRIVATE);
+            String role = prefs.getString("active_role", "host");
+            if ("client".equals(role)) {
+                startActivity(new Intent(this, ClientDashboardActivity.class).putExtra("HOST_ID", hostId));
+            } else {
+                startActivity(new Intent(this, DashboardActivity.class).putExtra("HOST_ID", hostId));
+            }
             finish();
         });
         if (btnActivity != null) btnActivity.setOnClickListener(v -> {
