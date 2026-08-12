@@ -1,150 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/md3_bg">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md3_bg">
 
+    <!-- Top App Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingHorizontal="12dp">
+        android:paddingHorizontal="4dp"
+        android:background="@color/md3_surface">
         <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/ic_back"
-        android:tint="@color/md3_text_primary"
-        android:padding="12dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:clickable="true"
-        android:focusable="true"/>
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/md3_text_primary"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Connect"
-        android:textColor="@color/md3_text_primary"
-        android:textSize="11sp"
-        android:fontFamily="sans-serif-medium"
-        android:layout_marginStart="16dp"/>
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Connect to Host"
+            android:textColor="@color/md3_text_primary"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"/>
     </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/md3_outline"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="12dp">
+        android:padding="16dp">
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Illustration -->
+            <FrameLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_md3_icon_container"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_connect"
+                    android:tint="@color/md3_primary"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
 
             <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Connect to a Host"
-        android:textSize="11sp"
-        android:textColor="@color/md3_text_primary"
-        android:fontFamily="sans-serif-medium"
-        android:layout_marginBottom="12dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect to a Host"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/md3_text_primary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"/>
 
             <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Host ID"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="11sp"
-        android:layout_marginBottom="8dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter the Host ID and credentials provided by the host device."
+                android:textSize="14sp"
+                android:textColor="@color/md3_text_secondary"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Host ID -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Host ID"
+                android:textColor="@color/md3_text_secondary"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp"/>
             <EditText
-        android:id="@+id/editConnectId"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_md3_input"
-        android:paddingHorizontal="12dp"
-        android:textColor="@color/md3_text_primary"
-        android:textColorHint="@color/md3_text_secondary"
-        android:hint="Enter Host ID"
-        android:layout_marginBottom="12dp"/>
+                android:id="@+id/editConnectId"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_md3_input"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/md3_text_primary"
+                android:textColorHint="@color/md3_text_tertiary"
+                android:hint="Enter Host ID"
+                android:textSize="15sp"
+                android:layout_marginBottom="16dp"/>
 
+            <!-- Username -->
             <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="11sp"
-        android:layout_marginBottom="8dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/md3_text_secondary"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp"/>
             <EditText
-        android:id="@+id/editConnectUsername"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_md3_input"
-        android:paddingHorizontal="12dp"
-        android:textColor="@color/md3_text_primary"
-        android:textColorHint="@color/md3_text_secondary"
-        android:hint="admin"
-        android:layout_marginBottom="12dp"/>
+                android:id="@+id/editConnectUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_md3_input"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/md3_text_primary"
+                android:textColorHint="@color/md3_text_tertiary"
+                android:hint="Username (e.g. admin)"
+                android:textSize="15sp"
+                android:layout_marginBottom="16dp"/>
 
+            <!-- Password -->
             <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="11sp"
-        android:layout_marginBottom="8dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/md3_text_secondary"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp"/>
             <EditText
-        android:id="@+id/editConnectPassword"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_md3_input"
-        android:paddingHorizontal="12dp"
-        android:textColor="@color/md3_text_primary"
-        android:textColorHint="@color/md3_text_secondary"
-        android:hint="Enter password"
-        android:inputType="textPassword"/>
+                android:id="@+id/editConnectPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_md3_input"
+                android:paddingHorizontal="14dp"
+                android:textColor="@color/md3_text_primary"
+                android:textColorHint="@color/md3_text_tertiary"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp"/>
 
+            <!-- Loading -->
             <ProgressBar
-        android:id="@+id/progressLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp"
-        android:visibility="gone"/>
+                android:id="@+id/progressLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
             <TextView
-        android:id="@+id/textLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="11sp"
-        android:visibility="gone"/>
+                android:id="@+id/textLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/md3_text_secondary"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
 
+            <!-- Connect Button -->
+            <LinearLayout
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_md3_button_primary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_connect"
+                    android:tint="@color/md3_text_on_primary"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect"
+                    android:textColor="@color/md3_text_on_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
 
-            <Button
-        android:background="@drawable/bg_md3_button"
-        android:textColor="#000000"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        android:id="@+id/btnConnect"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:text="Connect"
-        android:fontFamily="sans-serif-medium"/>
+            <!-- Request Access Button (hidden by default) -->
+            <LinearLayout
+                android:id="@+id/btnRequestAccess"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_md3_button_secondary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Request Access"
+                    android:textColor="@color/md3_text_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
 
-            <Button
-        android:background="@drawable/bg_md3_button"
-        android:textColor="#000000"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        android:id="@+id/btnRequestAccess"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:text="Request Access"
-        android:fontFamily="sans-serif-medium"
-        android:visibility="gone"/>
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

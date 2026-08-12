@@ -1,201 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_md3_bottom_sheet"
-        android:orientation="vertical"
-        android:padding="12dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_md3_bottom_sheet"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp">
 
-    <!-- Handle -->
+    <!-- Bottom Sheet Handle -->
     <View
         android:layout_width="32dp"
         android:layout_height="4dp"
-        android:background="@drawable/bg_md3_nav_bar"
-        android:backgroundTint="@color/md3_outline"
+        android:background="@color/md3_outline"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="16dp"/>
 
+    <!-- File Title -->
     <TextView
         android:id="@+id/textMenuTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="File.txt"
-        android:textSize="11sp"
+        android:text="file_name.txt"
+        android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/md3_text_primary"
         android:maxLines="1"
         android:ellipsize="middle"
-        android:layout_marginBottom="12dp"/>
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp"/>
 
-    <!-- Actions -->
+    <!-- Divider -->
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@drawable/divider_light"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Download -->
     <LinearLayout
         android:id="@+id/btnMenuDownload"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
         <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_download_round"
-        android:tint="@color/md3_text_secondary"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_download_round"
+            android:tint="@color/md3_text_secondary"
+            android:layout_marginEnd="16dp"/>
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Download"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_text_primary"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:textSize="15sp"
+            android:textColor="@color/md3_text_primary"/>
     </LinearLayout>
 
+    <!-- Share Link -->
     <LinearLayout
         android:id="@+id/btnMenuShare"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
         <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_link"
-        android:tint="@color/md3_text_secondary"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_link"
+            android:tint="@color/md3_text_secondary"
+            android:layout_marginEnd="16dp"/>
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Share Link"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_text_primary"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Link"
+            android:textSize="15sp"
+            android:textColor="@color/md3_text_primary"/>
     </LinearLayout>
-    
+
+    <!-- Compress / Zip -->
     <LinearLayout
         android:id="@+id/btnMenuZip"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
         <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_archive"
-        android:tint="@color/md3_text_secondary"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_archive"
+            android:tint="@color/md3_text_secondary"
+            android:layout_marginEnd="16dp"/>
         <TextView
-        android:id="@+id/textMenuZip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Compress"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_text_primary"/>
+            android:id="@+id/textMenuZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compress to ZIP"
+            android:textSize="15sp"
+            android:textColor="@color/md3_text_primary"/>
     </LinearLayout>
-    
+
+    <!-- Details -->
     <LinearLayout
         android:id="@+id/btnMenuDetails"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
         <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_info"
-        android:tint="@color/md3_text_secondary"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_info"
+            android:tint="@color/md3_text_secondary"
+            android:layout_marginEnd="16dp"/>
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Details"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_text_primary"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Details"
+            android:textSize="15sp"
+            android:textColor="@color/md3_text_primary"/>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/md3_outline"
+    <!-- Divider -->
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@drawable/divider_light"
         android:layout_marginVertical="8dp"/>
 
     <!-- Move -->
     <LinearLayout
         android:id="@+id/btnMenuMove"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-        <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_folder"
-        android:tint="@color/md3_primary"/>
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Move File"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_primary"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/btnMenuRestore"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:visibility="gone">
+        android:paddingHorizontal="16dp">
         <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_archive"
-        android:tint="@color/md3_success"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_move_to"
+            android:tint="@color/md3_primary"
+            android:layout_marginEnd="16dp"/>
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restore File"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_success"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move To…"
+            android:textSize="15sp"
+            android:textColor="@color/md3_primary"/>
     </LinearLayout>
 
+    <!-- Restore -->
     <LinearLayout
-        android:id="@+id/btnMenuTrash"
+        android:id="@+id/btnMenuRestore"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone">
         <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_delete"
-        android:tint="@color/md3_error"/>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_archive"
+            android:tint="@color/md3_success"
+            android:layout_marginEnd="16dp"/>
         <TextView
-        android:id="@+id/textMenuTrash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_marginStart="16dp"
-        android:textSize="11sp"
-        android:textColor="@color/md3_error"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restore File"
+            android:textSize="15sp"
+            android:textColor="@color/md3_success"/>
     </LinearLayout>
+
+    <!-- Delete -->
+    <LinearLayout
+        android:id="@+id/btnMenuTrash"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/md3_error"
+            android:layout_marginEnd="16dp"/>
+        <TextView
+            android:id="@+id/textMenuTrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="15sp"
+            android:textColor="@color/md3_error"/>
+    </LinearLayout>
+
 </LinearLayout>

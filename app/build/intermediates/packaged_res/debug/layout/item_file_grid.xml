@@ -1,71 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="8dp"
-        android:background="?attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true">
+<!-- Grid view card: icon on top, name below, compact square -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_md3_surface"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="12dp"
+    android:gravity="center">
 
-    <RelativeLayout
-        android:layout_width="64dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="8dp">
-
-        <ImageView
-        android:id="@+id/imgFileIcon"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_folder"
-        app:tint="#FFC107"/>
-
-        <ImageView
-        android:id="@+id/imgOverlay"
+    <!-- Selection Checkbox -->
+    <ImageView
+        android:id="@+id/imgSelect"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_image"
-        android:tint="#FFFFFF"
-        android:visibility="gone"/>
-
-        <ImageView
-        android:id="@+id/imgSelect"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
         android:src="@drawable/ic_uncheck_circle_outline"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/bg_md3_surface"
+        android:tint="@color/md3_text_secondary"
+        android:layout_gravity="start"
         android:visibility="gone"/>
-    </RelativeLayout>
 
+    <!-- File Icon -->
+    <ImageView
+        android:id="@+id/imgFileIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_folder"
+        android:tint="@color/icon_folder"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- File Name -->
     <TextView
         android:id="@+id/textFileName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Folder Name"
+        android:text="File Name"
         android:textColor="@color/md3_text_primary"
-        android:textSize="11sp"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-medium"
         android:maxLines="2"
-        android:gravity="center"
-        android:ellipsize="end"/>
+        android:ellipsize="end"
+        android:gravity="center_horizontal"/>
 
+    <!-- Item Count / Size -->
     <TextView
         android:id="@+id/textItemCount"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0 items"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="10sp"
-        android:gravity="center"
-        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/md3_text_tertiary"
+        android:textSize="11sp"
         android:layout_marginTop="2dp"/>
-    
+
+    <!-- Date (hidden for grid, but available if needed) -->
     <TextView
         android:id="@+id/textFileDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="10sp"
+        android:textColor="@color/md3_text_tertiary"
+        android:visibility="gone"/>
+
+    <!-- Overlay icon (unused in grid, kept for adapter compat) -->
+    <ImageView
+        android:id="@+id/imgOverlay"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"/> <!-- Hidden in grid mode -->
+        android:visibility="gone"/>
+
 </LinearLayout>

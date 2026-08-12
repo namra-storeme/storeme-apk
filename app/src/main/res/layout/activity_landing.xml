@@ -1,116 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/md3_bg"
-        android:padding="12dp"
-        android:gravity="center">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md3_bg"
+    android:gravity="center">
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/ic_server"
-        android:tint="@color/md3_primary"
-        android:layout_marginBottom="12dp"/>
+    <!-- App Icon -->
+    <FrameLayout
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@drawable/bg_md3_icon_container"
+        android:layout_marginBottom="24dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_server"
+            android:tint="@color/md3_primary"
+            android:layout_gravity="center"/>
+    </FrameLayout>
 
+    <!-- App Name -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="StoreMe"
-        android:textSize="32sp"
+        android:textSize="28sp"
         android:textColor="@color/md3_text_primary"
         android:fontFamily="sans-serif-medium"
-        android:layout_marginBottom="8dp"/>
+        android:letterSpacing="-0.02"
+        android:layout_marginBottom="6dp"/>
 
+    <!-- Tagline -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Secure, decentralized storage."
-        android:textSize="11sp"
+        android:text="Your private, peer-to-peer cloud storage"
+        android:textSize="14sp"
         android:textColor="@color/md3_text_secondary"
         android:layout_marginBottom="48dp"
         android:gravity="center"/>
 
+    <!-- Choose Mode Container -->
     <LinearLayout
-        android:id="@+id/btnCreateServer"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@drawable/bg_md3_surface"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="12dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:layout_marginBottom="12dp"
-        android:elevation="0dp">
-        
-        <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/ic_server"
-        android:tint="@color/md3_primary"/>
-            
-        <LinearLayout
-        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_marginStart="16dp">
-            <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Initialize Host Server"
-        android:textColor="@color/md3_text_primary"
-        android:fontFamily="sans-serif-medium"
-        android:textSize="11sp"/>
-            <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Turn this device into a cloud node"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="13sp"/>
-        </LinearLayout>
-    </LinearLayout>
+        android:paddingHorizontal="24dp">
 
-    <LinearLayout
-        android:id="@+id/btnUseServer"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@drawable/bg_md3_surface"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="12dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:elevation="0dp">
-        
-        <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/ic_device"
-        android:tint="@color/md3_primary"/>
-            
+        <!-- Host Server Card -->
         <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginStart="16dp">
-            <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Connect as Client"
-        android:textColor="@color/md3_text_primary"
-        android:fontFamily="sans-serif-medium"
-        android:textSize="11sp"/>
-            <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Access storage from a host node"
-        android:textColor="@color/md3_text_secondary"
-        android:textSize="13sp"/>
-        </LinearLayout>
-    </LinearLayout>
+            android:id="@+id/btnCreateServer"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_md3_surface"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="12dp">
 
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_md3_icon_container"
+                android:layout_marginEnd="16dp">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_server"
+                    android:tint="@color/md3_primary"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host a Server"
+                    android:textColor="@color/md3_text_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share storage from this device"
+                    android:textColor="@color/md3_text_secondary"
+                    android:textSize="13sp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/md3_text_tertiary"/>
+        </LinearLayout>
+
+        <!-- Connect as Client Card -->
+        <LinearLayout
+            android:id="@+id/btnUseServer"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_md3_surface"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_md3_icon_container"
+                android:layout_marginEnd="16dp">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_device"
+                    android:tint="@color/md3_primary"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect as Client"
+                    android:textColor="@color/md3_text_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Access a host's storage remotely"
+                    android:textColor="@color/md3_text_secondary"
+                    android:textSize="13sp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/md3_text_tertiary"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
