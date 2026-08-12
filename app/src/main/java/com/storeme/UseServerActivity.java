@@ -3,7 +3,6 @@ package com.storeme;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -19,11 +18,11 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UseServerActivity extends AppCompatActivity {
 
-    private Button btnConnect;
+    private View btnConnect;
     private ProgressBar progressLoading;
     private TextView textLoading;
     private boolean isConnecting = false;
-    private Button btnRequestAccess;
+    private View btnRequestAccess;
     private ValueEventListener requestListener;
 
     @Override
@@ -198,7 +197,12 @@ public class UseServerActivity extends AppCompatActivity {
         isConnecting = loading;
         btnConnect.setEnabled(!loading);
         if (btnRequestAccess != null) btnRequestAccess.setEnabled(!loading);
-        btnConnect.setText(loading ? "Connecting..." : "ESTABLISH CONNECTION");
+        
+        TextView textConnectBtn = findViewById(R.id.textConnectBtn);
+        if (textConnectBtn != null) {
+            textConnectBtn.setText(loading ? "Connecting..." : "Connect");
+        }
+        
         if (progressLoading != null) progressLoading.setVisibility(loading ? View.VISIBLE : View.GONE);
         if (textLoading != null) textLoading.setVisibility(loading ? View.VISIBLE : View.GONE);
     }

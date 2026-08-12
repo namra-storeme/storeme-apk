@@ -3,7 +3,7 @@ package com.storeme;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.View;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +17,7 @@ public class CreateServerActivity extends AppCompatActivity {
 
         EditText editHostId = findViewById(R.id.editHostId);
         EditText editPassword = findViewById(R.id.editPassword);
-        Button btnCreate = findViewById(R.id.btnCreate);
+        View btnCreate = findViewById(R.id.btnCreate);
 
         btnCreate.setOnClickListener(v -> {
             String hostId = editHostId.getText().toString().trim();

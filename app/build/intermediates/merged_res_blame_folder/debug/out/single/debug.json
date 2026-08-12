@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\layout_activity_log.xml.flat",
-        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\layout\\activity_log.xml"
-    },
-    {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_copy.xml.flat",
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_copy.xml"
+    },
+    {
+        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\layout_activity_log.xml.flat",
+        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\layout\\activity_log.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_clock.xml.flat",
@@ -24,20 +24,20 @@
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\bg_file_manager_main.xml"
     },
     {
-        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_delete.xml"
-    },
-    {
-        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_audio_category.xml.flat",
-        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_audio_category.xml"
+        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_image_category.xml.flat",
+        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_image_category.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_bg_button_primary_premium.xml.flat",
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\bg_button_primary_premium.xml"
     },
     {
-        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_image_category.xml.flat",
-        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_image_category.xml"
+        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_audio_category.xml.flat",
+        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_audio_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_delete.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_server.xml.flat",
@@ -52,12 +52,12 @@
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\divider_light.xml"
     },
     {
-        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\layout_activity_manage_users.xml.flat",
-        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\layout\\activity_manage_users.xml"
-    },
-    {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_download_round.xml.flat",
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\ic_download_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\layout_activity_manage_users.xml.flat",
+        "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\layout\\activity_manage_users.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\layout_activity_use_server.xml.flat",
@@ -102,6 +102,10 @@
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_bg_fab.xml.flat",
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\bg_fab.xml"
+    },
+    {
+        "merged": "com.storeme.app-merged_res-38:/layout_activity_use_server.xml.flat",
+        "source": "com.storeme.app-main-40:/layout/activity_use_server.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_hero_illustration.jpg.flat",
@@ -206,10 +210,6 @@
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_bg_pill_green.xml.flat",
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\bg_pill_green.xml"
-    },
-    {
-        "merged": "com.storeme.app-merged_res-38:/layout_activity_settings.xml.flat",
-        "source": "com.storeme.app-main-40:/layout/activity_settings.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_bg_md3_button_primary.xml.flat",
@@ -342,10 +342,6 @@
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_bg_md3_dialog.xml.flat",
         "source": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-main-40:\\drawable\\bg_md3_dialog.xml"
-    },
-    {
-        "merged": "com.storeme.app-merged_res-38:/layout_dialog_file_menu.xml.flat",
-        "source": "com.storeme.app-main-40:/layout/dialog_file_menu.xml"
     },
     {
         "merged": "C:\\Users\\NamraP\\.gradle\\daemon\\8.14\\com.storeme.app-merged_res-38:\\drawable_ic_connect.xml.flat",

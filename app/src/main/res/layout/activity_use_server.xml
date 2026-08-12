@@ -181,6 +181,7 @@
                     android:tint="@color/md3_text_on_primary"
                     android:layout_marginEnd="8dp"/>
                 <TextView
+                    android:id="@+id/textConnectBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Connect"

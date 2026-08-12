@@ -3827,6 +3827,7 @@ id textBreadcrumb
 id textBytes
 id textClientSpeed
 id textClientStorage
+id textConnectBtn
 id textConnections
 id textCpuUsage
 id textEnd
